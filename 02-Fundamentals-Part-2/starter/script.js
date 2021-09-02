@@ -98,15 +98,59 @@ console.log(juiceProcessor(2,3));
 // yearsUntilRetirement(1950, "Steve");
 // yearsUntilRetirement(1987, "Max");
 
-const calcAge = function(birthYear){
-    return 2037 - birthYear;
+// const calcAge = function(birthYear){
+//     return 2037 - birthYear;
+// }
+
+// const years = [1990, 1967, 2002, 2010, 2018];
+
+// const age1 = calcAge(years[0]);
+// const age2 = calcAge(years[1]);
+// const age3 = calcAge(years[years.length - 1]);
+
+// const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
+// console.log(ages);
+
+// const friends = [Jordan, Meredith, Simon, Katie];
+// friends.push('Nick');
+
+const max = {
+  firstName: "Max",
+  lastName: "Temkin",
+  age: 2021 - 1987,
+  job: "unemployed",
+  friends: ["Jordan", "Simon", "Katie"],
+};
+
+console.log(max.job);
+``;
+console.log(max["lastName"]);
+
+const nameKey = "Name";
+console.log(max["first"] + nameKey);
+console.log(max["last"] + nameKey);
+
+const interestedIn = prompt(
+  "What do you want to know about Max? Choose between firstName, lastName, age, job, and friends."
+);
+
+console.log(interestedIn);
+
+if (max[interestedIn]) {
+  console.log(max[interestedIn]);
+} else {
+  console.log(
+    "That's not a property. Choose between firstName, lastName, age, job, and friends."
+  );
 }
 
-const years = [1990, 1967, 2002, 2010, 2018];
+max.location = "Chicago";
+max["Twitter"] = "@MaxTemkin";
 
-const age1 = calcAge(years[0]);
-const age2 = calcAge(years[1]);
-const age3 = calcAge(years[years.length - 1]);
+console.log(max);
 
-const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
-console.log(ages);
+// Challenge
+
+console.log(
+  `${max.firstName} has ${max.friends.length} friends, and his best friend is called ${max.friends[0]}.`
+);
