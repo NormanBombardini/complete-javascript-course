@@ -114,43 +114,117 @@ console.log(juiceProcessor(2,3));
 // const friends = [Jordan, Meredith, Simon, Katie];
 // friends.push('Nick');
 
-const max = {
-  firstName: "Max",
-  lastName: "Temkin",
-  age: 2021 - 1987,
-  job: "unemployed",
-  friends: ["Jordan", "Simon", "Katie"],
-};
+// const max = {
+//   firstName: "Max",
+//   lastName: "Temkin",
+//   age: 2021 - 1987,
+//   job: "unemployed",
+//   friends: ["Jordan", "Simon", "Katie"],
+//   hasDriversLicense: true
+// };
 
-console.log(max.job);
-``;
-console.log(max["lastName"]);
+// console.log(max.job);
+// ``;
+// console.log(max["lastName"]);
 
-const nameKey = "Name";
-console.log(max["first"] + nameKey);
-console.log(max["last"] + nameKey);
+// const nameKey = "Name";
+// console.log(max["first"] + nameKey);
+// console.log(max["last"] + nameKey);
 
-const interestedIn = prompt(
-  "What do you want to know about Max? Choose between firstName, lastName, age, job, and friends."
-);
+// const interestedIn = prompt(
+//   "What do you want to know about Max? Choose between firstName, lastName, age, job, and friends."
+// );
 
-console.log(interestedIn);
+// console.log(interestedIn);
 
-if (max[interestedIn]) {
-  console.log(max[interestedIn]);
-} else {
-  console.log(
-    "That's not a property. Choose between firstName, lastName, age, job, and friends."
-  );
+// if (max[interestedIn]) {
+//   console.log(max[interestedIn]);
+// } else {
+//   console.log(
+//     "That's not a property. Choose between firstName, lastName, age, job, and friends."
+//   );
+// }
+
+// max.location = "Chicago";
+// max["Twitter"] = "@MaxTemkin";
+
+// console.log(max);
+
+// // Challenge
+
+// console.log(
+//   `${max.firstName} has ${max.friends.length} friends, and his best friend is called ${max.friends[0]}.`
+// );
+
+// // Challenge
+
+// const max = {
+//     firstName: "Max",
+//     lastName: "Temkin",
+//     age: 2021 - 1987,
+//     job: "unemployed",
+//     friends: ["Jordan", "Simon", "Katie"],
+//     hasDriversLicense: true,
+
+//     calcAge: function () {
+//         this.age = 2021 - this.birthYear;
+//         return;
+//     },
+    
+//     getSummary: function () {
+//         return `${this.firstName} is a ${this.age} year old ${this.job}, and ${this.age >= 18 ? "has" : "does not have"} a drivers license.`;
+//     }
+// };
+
+// console.log(max.getSummary());
+
+
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`Lifting weights ${rep}`);
+// }
+
+// const jonas = [
+//     "Jonas",
+//     "Schmedtmann",
+//     2037 - 1991,
+//     "Teacher",
+//     ["Michael", "Peter", "Steven"],
+//     true
+// ];
+
+// const types = [];
+
+// for (let i = 0; i < jonas.length; i++) {
+//     console.log(jonas[i]);
+
+//     // Filling types array
+//     types[i] = typeof jonas[i];
+// };
+
+// console.log(types);
+
+// const years = [1991, 2007, 1969, 2020];
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++){
+//     ages.push(2021 - years[i]);
+// }
+
+// console.log(ages);
+
+// for (let i = 0; i < jonas.length; i++) {
+//     if (typeof jonas[i] !== "string") continue;
+//     console.log(jonas[i]);
+// };
+
+const jonas = [
+    "Jonas",
+    "Schmedtmann",
+    2037 - 1991,
+    "Teacher",
+    ["Michael", "Peter", "Steven"],
+];
+
+for (let i = jonas.length - 1; i > -1; i--){
+    console.log(i, jonas[i]);
 }
-
-max.location = "Chicago";
-max["Twitter"] = "@MaxTemkin";
-
-console.log(max);
-
-// Challenge
-
-console.log(
-  `${max.firstName} has ${max.friends.length} friends, and his best friend is called ${max.friends[0]}.`
-);
