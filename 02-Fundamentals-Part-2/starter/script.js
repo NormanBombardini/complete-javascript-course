@@ -217,14 +217,21 @@ console.log(juiceProcessor(2,3));
 //     console.log(jonas[i]);
 // };
 
-const jonas = [
-    "Jonas",
-    "Schmedtmann",
-    2037 - 1991,
-    "Teacher",
-    ["Michael", "Peter", "Steven"],
-];
+// const jonas = [
+//     "Jonas",
+//     "Schmedtmann",
+//     2037 - 1991,
+//     "Teacher",
+//     ["Michael", "Peter", "Steven"],
+// ];
 
-for (let i = jonas.length - 1; i > -1; i--){
-    console.log(i, jonas[i]);
+// for (let i = jonas.length - 1; i > -1; i--){
+//     console.log(i, jonas[i]);
+// }
+
+let dice = Math.trunc(Math.random() * 52 + 1);
+
+while (dice !== 30) {
+    console.log(`You rolled a ${dice}.`);
+    dice = Math.trunc(Math.random() * 52 + 1);
 }
